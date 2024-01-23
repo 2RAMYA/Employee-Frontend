@@ -1,0 +1,19 @@
+form{
+    border: 3px solid black;
+    display:inline-block;
+    padding: 20px;
+    margin-left: 600px;
+    margin-top: 200px;
+}
+
+input{
+    height: 40px;
+    width: 400px;
+    margin: 30px;
+}
+label{
+    font-size:30px;
+}
+h1,div{
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+
+    <div>
+      <span>TO ADD NEW MEMBER</span>
+      <button
+        type="button"
+        (click)="navigateToForm()"
+        class="btn btn-primary btn-lg"
+      >
+        ADD
+      </button>
+    </div>
+
+    <table class="table table-striped" >
+      <thead>
+        <tr>
+          <th scope="col">Emp ID</th>
+          <th scope="col">NAME</th>
+          <th scope="col">PHONE</th>
+          <th scope="col">EMAIL</th>
+          <th scope="col">button</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let emp of data">
+          <td scope="row">{{ emp.id }}</td>
+          <td>{{ emp.name }}</td>
+          <td>{{ emp.phone }}</td>
+          <td>{{ emp.email }}</td>
+          <td>
+            <button style="margin-right: 100px" (click)="navigateForUpdate(emp)" >
+              <i class="fa fa-edit" style="font-size: 48px"></i>
+            </button>
+            <button (click)="deleteItem(emp.id)" >
+              <i class="fa fa-trash-o" style="font-size: 48px; color: red"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+ 

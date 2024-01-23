@@ -1,0 +1,37 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <h1>Enter the Employee Details</h1>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input
+      type="email"
+      class="form-control"
+      id="exampleInputEmail1"
+      formControlName="name"
+      aria-describedby="emailHelp"
+      placeholder="Enter email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">PHONE NUMBER</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="number"
+      id="exampleInputPassword1"
+      placeholder="Phone"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">EMAIL ADDRESS</label>
+    <input
+      type="email"
+      class="form-control"
+      id="exampleInputPassword1"
+      formControlName="email"
+      placeholder="Email"
+    />
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
